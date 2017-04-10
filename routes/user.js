@@ -14,7 +14,7 @@ const createSession = require('../util/session');
 const verifyCredentials = require('../util/verifyCredentials');
 const verifyUniqueUser = require('../util/verifyUniqueUser');
 
-module.exports = [
+module.exports = (key) => [
   /*
   {
     method: 'GET',
@@ -70,11 +70,11 @@ module.exports = [
             if (request.server.app.useSession) {
               const session = createSession();
               data['session'] = session.id;
-              token = createToken(data);
+              token = createToken(data, key);
               session.token = token;
               request.yar.set('session', session);
             } else {
-              token = createToken(data);
+              token = createToken(data, key);
             }
 
             reply({status: 1})
@@ -101,11 +101,11 @@ module.exports = [
         if (request.server.app.useSession) {
           const session = createSession();
           data['session'] = session.id;
-          token = createToken(data);
+          token = createToken(data, key);
           session.token = token;
           request.yar.set('session', session);
         } else {
-          token = createToken(data);
+          token = createToken(data, key);
         }
 
         reply({status: 1, token: token})
@@ -127,11 +127,11 @@ module.exports = [
         if (request.server.app.useSession) {
           const session = createSession();
           data['session'] = session.id;
-          token = createToken(data);
+          token = createToken(data, key);
           session.token = token;
           request.yar.set('session', session);
         } else {
-          token = createToken(data);
+          token = createToken(data, key);
         }
 
         reply({status: 1})

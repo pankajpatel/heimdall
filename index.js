@@ -10,12 +10,12 @@ Auth.register = function (server, options, next) {
     }
 
     server.auth.strategy('jwt', 'jwt', true, {
-      key: process.env.JWT_SECRET,
+      key: options.key,
       validateFunc: require('./util/validator'),
       verifyOptions: { algorithms: [ 'HS256' ], ignoreExpiration: true }
     });
 
-    server.route(routes);
+    server.route(routes(options.key));
   });
   next();
 };
