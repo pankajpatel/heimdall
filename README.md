@@ -5,9 +5,9 @@ The HapiJS gatekeeping Auth Plugin
 ------
 
 ### Requirements
-This plugin works with (or requires) following:
+This plugin requires following:
 
-- Hapi.js
-- MongoDB
-- Mongoose
-- hapi-auth-jwt2
+- [Hapi.js](https://github.com/hapijs/hapi)
+- [MongoDB](https://github.com/mongodb/mongo)
+- [Mongoose](https://github.com/Automattic/mongoose)
+- [hapi-auth-jwt2](https://github.com/dwyl/hapi-auth-jwt2)
