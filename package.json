@@ -7,7 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "aguid": "^2.0.0",
-    "bcrypt": "^1.0.2",
+    "bcrypt": "^3.0.6",
     "boom": "^7.3.0",
     "hapi-auth-jwt2": "^8.8.0",
     "joi": "^10.4.1",
