@@ -165,9 +165,9 @@ glob@^7.1.3:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-hapi-auth-jwt2@^8.8.0:
-  version "8.8.0"
-  resolved "https://registry.yarnpkg.com/hapi-auth-jwt2/-/hapi-auth-jwt2-8.8.0.tgz#65aed2eba16b5648cfe43b57b5293a77d0a61321"
+hapi-auth-jwt2@^8.8.1:
+  version "8.8.1"
+  resolved "https://registry.yarnpkg.com/hapi-auth-jwt2/-/hapi-auth-jwt2-8.8.1.tgz#2c32c79ff42187a6c5fb4d156c39a6b821710417"
   dependencies:
     "@hapi/boom" "^8.0.1"
     cookie "^0.4.0"
